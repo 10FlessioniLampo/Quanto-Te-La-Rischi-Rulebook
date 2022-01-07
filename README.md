@@ -12,7 +12,7 @@
 10. Non ci sono limiti al valore che _z_ può assumere, ma andrebbe comunque calibrato in funzione dell'azione scelta.
 11. È possibile per __B__ quotare il "Quanto te la rischi?" di __A__ prima di dichiarare il numero _z_. Qualora questo avvenga, il gioco procede come di consueto, ma nel caso in cui _x_ ≠ _y_ si esegue ulteriormente il passaggio descritto nella regola _8_. Se _x'_ = _y'_, __A__ deve eseguire l'azione.
 
-Algoritmo:__
+__Algoritmo:__
 ```js
 function quantoTeLaRischi(a, b, z, action, quoto) {
     let x = b.getRandom(1, z)
