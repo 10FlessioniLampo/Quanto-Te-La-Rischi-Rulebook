@@ -26,3 +26,4 @@ function quantoTeLaRischi(a, b, z, action, quoto) {
 ```
 12.  Per una qualunque modifica alle precedenti regole è necessario depositare una richiesta presso la [10FlessioniLampo Organization](https://github.com/10FlessioniLampo). Il cambiamento verrà discusso e verrà effettuerà una votazione. La modifica entrerà in vigore se viene raggiunta una maggioranza.
 13.  Una regola che viene creata comincia ad avere effetto da subito, e non dal momento in cui appare su questo documento.
+14. È proibito a qualunque giocatore specificare azioni legate al suicidio, all'autolesionismo, o a qualsiasi tipo di dolore fisico o psicologico non consensuale.
