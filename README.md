@@ -10,9 +10,15 @@
 8. Si fa partire un countdown di tre secondi, al cui termine sia __B__ che __A__ dicono all'unisono i due numeri _x_ e _y_.
 9. Se _x_ = _y_ allora __B__ deve eseguire l'azione specificata dal "Quanto te la rischi?" di __A__.
 10. Non ci sono limiti al valore che _z_ può assumere, ma andrebbe comunque calibrato in funzione dell'azione scelta.
-11. È possibile per __B__ quotare il "Quanto te la rischi?" di __A__ prima di dichiarare il numero _z_. Qualora questo avvenga, il gioco procede come di consueto, ma nel caso in cui _x_ ≠ _y_ si esegue ulteriormente il passaggio descritto nella regola _8_. Se _x'_ = _y'_, __A__ deve eseguire l'azione.
+11. È possibile per __B__ "quotare" il "Quanto te la rischi?" di __A__ prima di dichiarare il numero _z_ dicendo la parola "quoto". Qualora questo avvenga, il gioco procede come di consueto, ma nel caso in cui _x_ ≠ _y_ si esegue ulteriormente il passaggio descritto nella regola _8_. Se _x'_ = _y'_, __A__ deve eseguire l'azione. L'algoritmo che descrive il funzionamento completo del gioco è consultabile [alla fine di questo documento](#algoritmo).
+12.  Per una qualunque modifica alle regole è necessario depositare una richiesta presso la [10FlessioniLampo Organization](https://github.com/10FlessioniLampo). Il cambiamento verrà discusso e verrà effettuerà una votazione. La modifica entrerà in vigore se viene raggiunta una maggioranza.
+13.  Una regola che viene creata comincia ad avere effetto da subito, e non dal momento in cui appare su questo documento.
+14. È proibito a qualunque giocatore specificare azioni legate al suicidio, all'autolesionismo, o a qualsiasi tipo di dolore fisico o psicologico non consensuale.
+15. Non è possibile per un giocatore __A__ chiamare un "Quanto te la rischi?" su un giocatore __B__ se __A__ ha già ricevuto da un altro giocatore __C__ un "Quanto te la rischi?" uguale o estremamente simile in un momento precedente.
 
-__Algoritmo:__
+
+##### Algoritmo
+
 ```js
 function quantoTeLaRischi(a, b, z, action, quoto) {
     let x = b.getRandom(1, z)
@@ -24,7 +30,3 @@ function quantoTeLaRischi(a, b, z, action, quoto) {
     }
 }
 ```
-12.  Per una qualunque modifica alle precedenti regole è necessario depositare una richiesta presso la [10FlessioniLampo Organization](https://github.com/10FlessioniLampo). Il cambiamento verrà discusso e verrà effettuerà una votazione. La modifica entrerà in vigore se viene raggiunta una maggioranza.
-13.  Una regola che viene creata comincia ad avere effetto da subito, e non dal momento in cui appare su questo documento.
-14. È proibito a qualunque giocatore specificare azioni legate al suicidio, all'autolesionismo, o a qualsiasi tipo di dolore fisico o psicologico non consensuale.
-15. Non è possibile per un giocatore __A__ chiamare un "Quanto te la rischi?" su un giocatore __B__ se __A__ ha già ricevuto da un altro giocatore __C__ un "Quanto te la rischi?" uguale o estremamente simile in un momento precedente.
